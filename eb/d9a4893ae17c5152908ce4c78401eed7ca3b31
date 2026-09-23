@@ -1,0 +1,19 @@
+.gitignore
+  s_763dd599eb997c::t_11cb3e91375ff9 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ebd9a4893ae17c5152908ce4c78401eed7ca3b31",
+  "prompts": {},
+  "sessions": {
+    "s_763dd599eb997c": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b76cd309-e873-4d2b-bfd8-2d3825deb70e",
+        "model": "auto-smart"
+      },
+      "human_author": "Cameron Dempsey <cameron.dempsey@zoom.us>"
+    }
+  }
+}
