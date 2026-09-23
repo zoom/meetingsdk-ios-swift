@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LaunchScreenViewController">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="LaunchScreenScene">
+            <objects>
+                <viewController id="LaunchScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LaunchScreenView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="MobileRTC Sample" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="TitleLabel">
+                                <rect key="frame" x="20" y="260" width="353" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Copyright (c) 2026 Zoom Communications, Inc. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="CopyrightLabel">
+                                <rect key="frame" x="20" y="800" width="353" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TitleLabel" firstAttribute="leading" secondItem="LaunchScreenView" secondAttribute="leading" constant="20" symbolic="YES" id="TitleLeading"/>
+                            <constraint firstAttribute="trailing" secondItem="TitleLabel" secondAttribute="trailing" constant="20" symbolic="YES" id="TitleTrailing"/>
+                            <constraint firstItem="TitleLabel" firstAttribute="centerY" secondItem="LaunchScreenView" secondAttribute="bottom" multiplier="1/3" id="TitleVertical"/>
+                            <constraint firstItem="CopyrightLabel" firstAttribute="leading" secondItem="LaunchScreenView" secondAttribute="leading" constant="20" symbolic="YES" id="CopyrightLeading"/>
+                            <constraint firstAttribute="trailing" secondItem="CopyrightLabel" secondAttribute="trailing" constant="20" symbolic="YES" id="CopyrightTrailing"/>
+                            <constraint firstAttribute="bottom" secondItem="CopyrightLabel" secondAttribute="bottom" constant="20" id="CopyrightBottom"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FirstResponder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

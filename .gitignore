@@ -1,0 +1,32 @@
+# Cursor / local AI config (do not publish)
+.cursor/
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+
+# Build products
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Signing / secrets
+*.mobileprovision
+*.p12
+*.cer
+*.certSigningRequest
+.env
+.env.*
+*.pem
+*.key
+
+# Local JWT / credential fill-ins (keep sample constants empty in git)
+Secrets.swift
+**/LocalSecrets.swift

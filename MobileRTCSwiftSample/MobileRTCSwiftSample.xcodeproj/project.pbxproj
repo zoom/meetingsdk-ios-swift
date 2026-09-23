@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6D984572F806F78000FAD2A /* zoomcml.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984552F806F78000FAD2A /* zoomcml.xcframework */; };
+		A6D984582F806F78000FAD2A /* zoomcml.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984552F806F78000FAD2A /* zoomcml.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6D984592F806F78000FAD2A /* MobileRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984562F806F78000FAD2A /* MobileRTC.xcframework */; };
+		A6D9845A2F806F78000FAD2A /* MobileRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984562F806F78000FAD2A /* MobileRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6D984622F8070AD000FAD2A /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984612F8070AD000FAD2A /* ReplayKit.framework */; };
+		A6D984692F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A6D984602F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6D984702F807122000FAD2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D9846F2F807122000FAD2A /* CoreGraphics.framework */; };
+		A6D984722F807129000FAD2A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984712F807129000FAD2A /* CoreMedia.framework */; };
+		A6D984742F80712E000FAD2A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984732F80712E000FAD2A /* CoreVideo.framework */; };
+		A6D984762F80714E000FAD2A /* MobileRTCScreenShare.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984752F80714E000FAD2A /* MobileRTCScreenShare.xcframework */; };
+		A6D9847A2F80715A000FAD2A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D984792F80715A000FAD2A /* VideoToolbox.framework */; };
+		A6D9847B2F80715A000FAD2A /* MobileRTCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6D9847C2F80715A000FAD2A /* MobileRTCResources.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6D984672F8070AD000FAD2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6D984342F806830000FAD2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6D9845F2F8070AD000FAD2A;
+			remoteInfo = MobileRTCSwiftSampleScreenShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6D9845B2F806F78000FAD2A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6D984582F806F78000FAD2A /* zoomcml.xcframework in Embed Frameworks */,
+				A6D9845A2F806F78000FAD2A /* MobileRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D9846E2F8070AD000FAD2A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A6D984692F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A6D9843C2F806830000FAD2A /* MobileRTCSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileRTCSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D984552F806F78000FAD2A /* zoomcml.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:BJ4HAAB9B3:Zoom Communications, Inc."; lastKnownFileType = wrapper.xcframework; name = zoomcml.xcframework; path = ../lib/zoomcml.xcframework; sourceTree = "<group>"; };
+		A6D984562F806F78000FAD2A /* MobileRTC.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:BJ4HAAB9B3:Zoom Communications, Inc."; lastKnownFileType = wrapper.xcframework; name = MobileRTC.xcframework; path = ../lib/MobileRTC.xcframework; sourceTree = "<group>"; };
+		A6D984602F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MobileRTCSwiftSampleScreenShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D984612F8070AD000FAD2A /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		A6D9846F2F807122000FAD2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6D984712F807129000FAD2A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A6D984732F80712E000FAD2A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A6D984752F80714E000FAD2A /* MobileRTCScreenShare.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:BJ4HAAB9B3:Zoom Communications, Inc."; lastKnownFileType = wrapper.xcframework; name = MobileRTCScreenShare.xcframework; path = ../lib/MobileRTCScreenShare.xcframework; sourceTree = "<group>"; };
+		A6D984792F80715A000FAD2A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		A6D9847C2F80715A000FAD2A /* MobileRTCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobileRTCResources.bundle; path = ../lib/MobileRTCResources.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A6D9844E2F806832000FAD2A /* Exceptions for "MobileRTCSwiftSample" folder in "MobileRTCSwiftSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A6D9843B2F806830000FAD2A /* MobileRTCSwiftSample */;
+		};
+		A6D9846D2F8070AD000FAD2A /* Exceptions for "MobileRTCSwiftSampleScreenShare" folder in "MobileRTCSwiftSampleScreenShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A6D9845F2F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A6D9843E2F806830000FAD2A /* MobileRTCSwiftSample */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A6D9844E2F806832000FAD2A /* Exceptions for "MobileRTCSwiftSample" folder in "MobileRTCSwiftSample" target */,
+			);
+			path = MobileRTCSwiftSample;
+			sourceTree = "<group>";
+		};
+		A6D984632F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A6D9846D2F8070AD000FAD2A /* Exceptions for "MobileRTCSwiftSampleScreenShare" folder in "MobileRTCSwiftSampleScreenShare" target */,
+			);
+			path = MobileRTCSwiftSampleScreenShare;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6D984392F806830000FAD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D984572F806F78000FAD2A /* zoomcml.xcframework in Frameworks */,
+				A6D984592F806F78000FAD2A /* MobileRTC.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D9845D2F8070AD000FAD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D984722F807129000FAD2A /* CoreMedia.framework in Frameworks */,
+				A6D984702F807122000FAD2A /* CoreGraphics.framework in Frameworks */,
+				A6D9847A2F80715A000FAD2A /* VideoToolbox.framework in Frameworks */,
+				A6D984622F8070AD000FAD2A /* ReplayKit.framework in Frameworks */,
+				A6D984742F80712E000FAD2A /* CoreVideo.framework in Frameworks */,
+				A6D984762F80714E000FAD2A /* MobileRTCScreenShare.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6D984332F80682F000FAD2A = {
+			isa = PBXGroup;
+			children = (
+				A6D9843E2F806830000FAD2A /* MobileRTCSwiftSample */,
+				A6D984632F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare */,
+				A6D984542F806F78000FAD2A /* Frameworks */,
+				A6D9843D2F806830000FAD2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6D9843D2F806830000FAD2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6D9843C2F806830000FAD2A /* MobileRTCSwiftSample.app */,
+				A6D984602F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6D984542F806F78000FAD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D984792F80715A000FAD2A /* VideoToolbox.framework */,
+				A6D984752F80714E000FAD2A /* MobileRTCScreenShare.xcframework */,
+				A6D984732F80712E000FAD2A /* CoreVideo.framework */,
+				A6D984712F807129000FAD2A /* CoreMedia.framework */,
+				A6D9846F2F807122000FAD2A /* CoreGraphics.framework */,
+				A6D984562F806F78000FAD2A /* MobileRTC.xcframework */,
+				A6D9847C2F80715A000FAD2A /* MobileRTCResources.bundle */,
+				A6D984552F806F78000FAD2A /* zoomcml.xcframework */,
+				A6D984612F8070AD000FAD2A /* ReplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6D9843B2F806830000FAD2A /* MobileRTCSwiftSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D9844F2F806832000FAD2A /* Build configuration list for PBXNativeTarget "MobileRTCSwiftSample" */;
+			buildPhases = (
+				A6D984382F806830000FAD2A /* Sources */,
+				A6D984392F806830000FAD2A /* Frameworks */,
+				A6D9843A2F806830000FAD2A /* Resources */,
+				A6D9845B2F806F78000FAD2A /* Embed Frameworks */,
+				A6D9846E2F8070AD000FAD2A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6D984682F8070AD000FAD2A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A6D9843E2F806830000FAD2A /* MobileRTCSwiftSample */,
+			);
+			name = MobileRTCSwiftSample;
+			packageProductDependencies = (
+			);
+			productName = MobileRTCSwiftSample;
+			productReference = A6D9843C2F806830000FAD2A /* MobileRTCSwiftSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6D9845F2F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D9846A2F8070AD000FAD2A /* Build configuration list for PBXNativeTarget "MobileRTCSwiftSampleScreenShare" */;
+			buildPhases = (
+				A6D9845C2F8070AD000FAD2A /* Sources */,
+				A6D9845D2F8070AD000FAD2A /* Frameworks */,
+				A6D9845E2F8070AD000FAD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A6D984632F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare */,
+			);
+			name = MobileRTCSwiftSampleScreenShare;
+			packageProductDependencies = (
+			);
+			productName = MobileRTCSwiftSampleScreenShare;
+			productReference = A6D984602F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6D984342F806830000FAD2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					A6D9843B2F806830000FAD2A = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A6D9845F2F8070AD000FAD2A = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = A6D984372F806830000FAD2A /* Build configuration list for PBXProject "MobileRTCSwiftSample" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				ja,
+				es,
+				fr,
+			);
+			mainGroup = A6D984332F80682F000FAD2A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A6D9843D2F806830000FAD2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6D9843B2F806830000FAD2A /* MobileRTCSwiftSample */,
+				A6D9845F2F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6D9843A2F806830000FAD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D9847B2F80715A000FAD2A /* MobileRTCResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D9845E2F8070AD000FAD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6D984382F806830000FAD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D9845C2F8070AD000FAD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6D984682F8070AD000FAD2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6D9845F2F8070AD000FAD2A /* MobileRTCSwiftSampleScreenShare */;
+			targetProxy = A6D984672F8070AD000FAD2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A6D984502F806832000FAD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MobileRTCSwiftSample/MobileRTCSwiftSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileRTCSwiftSample/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bluetoothDescription;
+				INFOPLIST_KEY_NSCameraUsageDescription = cameraDescription;
+				INFOPLIST_KEY_NSContactsUsageDescription = contactsDescription;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = microphoneDescription;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = photoDescription;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6D984512F806832000FAD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MobileRTCSwiftSample/MobileRTCSwiftSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileRTCSwiftSample/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bluetoothDescription;
+				INFOPLIST_KEY_NSCameraUsageDescription = cameraDescription;
+				INFOPLIST_KEY_NSContactsUsageDescription = contactsDescription;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = microphoneDescription;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = photoDescription;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6D984522F806832000FAD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6D984532F806832000FAD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6D9846B2F8070AD000FAD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MobileRTCSwiftSampleScreenShare/MobileRTCSwiftSampleScreenShare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileRTCSwiftSampleScreenShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MobileRTCSwiftSampleScreenShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileRTCSwiftSampleScreenShare/MobileRTCSwiftSampleScreenShare-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6D9846C2F8070AD000FAD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MobileRTCSwiftSampleScreenShare/MobileRTCSwiftSampleScreenShare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileRTCSwiftSampleScreenShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MobileRTCSwiftSampleScreenShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileRTCSwiftSampleScreenShare/MobileRTCSwiftSampleScreenShare-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6D984372F806830000FAD2A /* Build configuration list for PBXProject "MobileRTCSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D984522F806832000FAD2A /* Debug */,
+				A6D984532F806832000FAD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D9844F2F806832000FAD2A /* Build configuration list for PBXNativeTarget "MobileRTCSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D984502F806832000FAD2A /* Debug */,
+				A6D984512F806832000FAD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D9846A2F8070AD000FAD2A /* Build configuration list for PBXNativeTarget "MobileRTCSwiftSampleScreenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D9846B2F8070AD000FAD2A /* Debug */,
+				A6D9846C2F8070AD000FAD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6D984342F806830000FAD2A /* Project object */;
+}
